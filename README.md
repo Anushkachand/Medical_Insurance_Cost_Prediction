@@ -1,8 +1,23 @@
-# 💰 Medical Insurance Cost Predictor
+#  Medical Insurance Cost Predictor
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://medicalinsurancecostprediction-empspbccyvix2bfu2pvrw2.streamlit.app/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#license)
+ 
+**A machine learning web application that estimates annual medical insurance charges from patient profile data.**
 
-A Streamlit app that estimates annual medical insurance charges from patient
-profile data (age, sex, BMI, children, smoker status, region) using a trained
-Random Forest regression model.
+
+## ✨ Features
+
+- 🔮 Predict annual medical insurance charges
+- 📊 Interactive and responsive Streamlit interface
+- 🧠 Random Forest Regression model
+- 📈 Dataset insights and visualizations
+- 👤 Patient profile input
+- ⚡ Instant prediction results
+- 📱 Responsive UI
+- 🎨 Clean and modern dashboard
+
 
 ## 📁 Project Structure
 
@@ -19,26 +34,16 @@ medical_insurance_predictor/
     └── insurance_model.pkl    → trained Random Forest model
 ```
 
-## 📊 Dataset
+# 🛠️ Technologies Used
 
-**Schema:** `age, sex, bmi, children, smoker, region, charges` — matching the
-widely-used Kaggle **"Medical Cost Personal Datasets"** (by Miri Choi), 1,338
-records.
-
-**Important note:** this sandboxed build environment cannot reach
-`kaggle.com` directly, so `data/insurance.csv` here is **synthetically
-generated** (`data/generate_dataset.py`) to match that dataset's exact column
-schema, value ranges, and well-documented real-world cost relationships:
-
-- Smoking status has the strongest effect on charges (sharp increase)
-- Higher BMI compounds cost, especially combined with smoking
-- Age raises the baseline charge steadily
-- Each dependent (child) adds a modest premium
-- Region contributes small variance
-
-If you have direct access to the original Kaggle CSV, you can drop it in at
-`data/insurance.csv` — the schema is identical, so no other code needs to
-change.
+- Python
+- Streamlit
+- Scikit-learn
+- Pandas
+- NumPy
+- Matplotlib
+- Joblib
+- ----
 
 ## 🧠 Model
 
@@ -61,6 +66,43 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Anushkachand/Medical_Insurance_Cost_Prediction.git
+```
+
+Move into the project
+
+```bash
+cd Medical_Insurance_Cost_Prediction
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# 🌐 Deployment
+
+This project is deployed on **Streamlit Community Cloud**.
+
+### Live Application
+
+https://medicalinsurancecostprediction-empspbccyvix2bfu2pvrw2.streamlit.app/
+
+---
 The app has three tabs:
 - **🔮 Predict** — enter patient details, get an instant cost estimate
 - **📊 Insights** — see how the dataset breaks down by smoking status, region, and overall charge distribution, plus how your prediction compares to the dataset average
@@ -72,4 +114,12 @@ This is an educational / portfolio project. Predictions are estimates from a
 model trained on synthetic data and are **not financial or medical advice**.
 
 ---
-✨ Built with AI (Claude).
+ 
+## Contact
+ 
+**Anushka Chand**
+ 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anushka-chand-18ab44300/)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?logo=gmail&logoColor=white)](mailto:anushkakaushik0801@gmail.com)
+[![GitHub](https://img.shields.io/badge/GitHub-Anushkachand-181717?logo=github&logoColor=white)](https://github.com/Anushkachand)
+---
