@@ -1,4 +1,4 @@
-#  Medical Insurance Cost Predictor
+#  Medical Insurance Cost Prediction
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://medicalinsurancecostprediction-empspbccyvix2bfu2pvrw2.streamlit.app/)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-RandomForest-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
@@ -22,7 +22,7 @@
 ## 📁 Project Structure
 
 ```
-medical_insurance_predictor/
+medical_insurance_prediction/
 ├── app.py                     → Streamlit UI (Predict / Insights / About tabs)
 ├── requirements.txt           → Python dependencies
 ├── medical.ipynb              → EDA + model training notebook
